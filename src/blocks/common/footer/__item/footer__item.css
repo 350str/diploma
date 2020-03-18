@@ -1,0 +1,21 @@
+.footer__item {
+    list-style-type: none;
+    margin-right: 48px;
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+
+    color: #1A1B22;
+}
+
+.footer__item:last-of-type {
+    margin-right: 0;
+}
+
+@media screen and (max-width: 1024px) {
+    .footer__item {
+        margin-right: 25px;
+    }
+}

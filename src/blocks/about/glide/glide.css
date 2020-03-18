@@ -1,0 +1,14 @@
+@import url(./__commit-text/glide__commit-text.css);
+@import url(./__date/glide__date.css);
+@import url(./__email/glide__email.css);
+@import url(./__photo/glide__photo.css);
+@import url(./__slide/glide__slide.css);
+@import url(./__text-info/glide__text-info.css);
+@import url(./__user-info/glide__user-info.css);
+@import url(./__user-name/glide__user-name.css);
+
+.glide {
+    background: #F5F6F7;
+    width: 100%;
+    height: 830px;
+}

@@ -1,0 +1,11 @@
+.search-result__item {
+    width: 32%;
+    min-height: 576px;
+    background-color: #fff;
+    margin-right: 16px;
+    border-radius: 16px;
+}
+
+.search-result__item:last-of-type {
+    margin-right: 0;
+} 

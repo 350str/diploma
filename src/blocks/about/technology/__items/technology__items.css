@@ -1,0 +1,29 @@
+.technology__items {
+    align-self: center;
+    display: flex;
+    align-items: center;
+}
+
+@media screen and (max-width: 1140px) {
+    .technology__items {
+        width: 85%;
+        justify-content: space-around;
+        margin-bottom: 52px;
+    } 
+}
+
+@media screen and (max-width: 620px) {
+    .technology__items {
+        flex-wrap: wrap;
+        width: 400px;
+        margin: auto;
+        margin-bottom: 52px;
+        justify-content: center;      
+    } 
+}
+
+@media screen and (max-width: 400px) {
+    .technology__items {
+        width: 300px;
+    } 
+}

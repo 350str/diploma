@@ -1,0 +1,30 @@
+.header__main {
+    text-decoration: none;
+    color: #1A1B22;
+    font-family: Roboto Slab;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 24px;
+    margin-left: 104px;
+}
+
+.header__main:hover {
+    cursor: url('../../../../images/lapka.svg'), auto;
+    opacity: 0.4;
+    transition: linear 0.3s;
+}
+
+@media screen and (max-width: 1024px) {
+    .header__main {
+        margin-left: 40px;
+    }
+}
+
+@media screen and (max-width: 570px) {
+    .header__main {
+        font-size: 16px;
+        line-height: 24px;
+        margin-left: 16px;
+    }
+}

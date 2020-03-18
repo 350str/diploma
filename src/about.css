@@ -1,0 +1,100 @@
+@import url(./vendor/fonts.css);
+@import url(./blocks/common/header/header.css);
+@import url(./blocks/common/about/about.css);
+@import url(./blocks/common/footer/footer.css);
+@import url(./blocks/about/clients/clients.css);
+@import url(./blocks/about/technology/technology.css);
+@import url(./blocks/about/glide/glide.css);
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.page {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.glide__track {
+    position: relative;
+}
+
+.glide__arrow--left {
+    border: none;
+    padding: 0;
+    margin: 0;
+    width: 40px;
+    height: 40px;
+    background: url('./images/slider-control1.svg');
+    background-color: none;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    outline: none;
+}
+
+.glide__arrow--left {
+    border-radius: 1000px;
+    padding: 0;
+    margin: 0;
+    width: 40px;
+    height: 40px;
+    background: url('./images/slider-left.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    outline: none;
+    left: 24px;
+}
+
+.glide__arrow--right {
+    border-radius: 1000px;
+    padding: 0;
+    margin: 0;
+    width: 40px;
+    height: 40px;
+    background: url('./images/slider-right.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    outline: none;
+    right: 24px;
+}
+
+.glide__bullet--active {
+    background: #1A1B22;
+}
+
+.search-result__header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search-result__header {
+    font-family: Roboto Slab;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 46px;
+    color: #1A1B22;
+}
+
+.search-result__link {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #1A1B22;
+    text-decoration: none;
+}
+
+.search-result__link-text {
+    margin-right: 10px;
+}
