@@ -3,8 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Что в мире творится? - Дипломная работа студента Яндекс.Практикума Страянка Роман">
+    <meta name="keywords" content="HTML5, CSS, JavaScript, Яндекс.Практикум, Что в мире творится?, NewsAnalyzer ">
+    <meta name="author" content="Роман Стравняк">
     <link rel="shortcut icon" href="./images/Group.jpg">
-    <link rel="stylesheet" href="about.9ed5f9baa1c573ded68e.css">
+    <link rel="stylesheet" href="about.6827efb9c456ebe429f1.css">
     <link rel="stylesheet" href="../node_modules/@glidejs/glide/dist/css/glide.core.min.css">
     <link rel="stylesheet" href="../node_modules/@glidejs/glide/dist/css/glide.theme.min.css">
     <title>О проекте</title>
@@ -15,7 +18,7 @@
             <a href="/analytics.html" class="header__main">NewsAnalyzer</a>
                 <div class="header__items">
                     <div class="header__item-container">
-                        <a href="/index.html" class="header__item">Главная</a>
+                        <a href="/index.html" class="header__item header__item_first">Главная</a>
                         <div class="header__dash header__dash_active"></div>
                     </div>
                     <div class="header__item-container">
@@ -26,7 +29,7 @@
         </header>
 
         <section class="clients">
-            <h1 class="clients__title">Клиентам</h1>
+            <h1 class="title clients__title">Клиентам</h1>
             <div class="clients__subtitle">
                 <p class="clients__text">
                     Этот сайт — дипломный проект студента Яндкс.Практикума. Его цель — показать, чему научился 
@@ -50,7 +53,7 @@
         </section>
 
         <section class="technology">
-            <h2 class="technology__title">Используемые технологии</h2>
+            <h2 class="title technology__title">Используемые технологии</h2>
             <div class="technology__items">
                 <div class="technology__item technology__item_type_html">
                     <p class="technology__name">HTML</p>
@@ -74,7 +77,7 @@
         <section class="about">
             <img src="./images/image-03.jpg" alt="sadad" class="about__avatar">
             <div class="about__info">
-                <h2 class="about__title">Об авторе</h2>
+                <h2 class="title about__title">Об авторе</h2>
                 <p class="about__subtitle">Это блок с описаением автора проекта. Здесь следует указать, как вас зовут, 
                     чем вы занимаетесь, какими технологиями разработки владете. Также можно рассказать о процессе обучения 
                     в Практикуме, чему вы тут научились, и чем можете помочь потенциальным заказчикам.
@@ -83,11 +86,11 @@
         </section>
 
         <section class="glide" id="intro">
-            <div class="search-result__header-container glide__container">
-                <h2 class="search-result__header">История коммитов из GitHub</h2>
-                <a href="#" class="search-result__link">
-                    <p class="search-result__link-text">Открыть в  Github</p>
-                    <img src="./images/back.svg" alt="" class="search-result__back-pic">
+            <div class="glide__title-container">
+                <h2 class="title glide__title">История коммитов из GitHub</h2>
+                <a href="#" class="glide__link">
+                    <p class="glide__link-text">Открыть в  Github</p>
+                    <img src="./images/back.svg" alt="" class="glide__back-pic">
                 </a>
             </div>
             <div class="glide__track" data-glide-el="track">
@@ -146,18 +149,25 @@
                 <button class="glide__bullet" data-glide-dir="=1"></button>
                 <button class="glide__bullet" data-glide-dir="=2"></button>
             </div>
+            <button class="glide__button">Открыть в GitHub</button>
         </section>
 
         <footer class="footer">
-            <p class="footer__copy">&copy; 2020  Supersite</p>
-            <ul class="footer__nav">
-                <li class="footer__item">Главная</li>
-                <li class="footer__item">О проекте</li>
-                <li class="footer__item">Яндекс.Практикум</li>
-            </ul>
-            <div class="footer__icons">
-                <img src="./images/github.svg" alt="" class="footer__icon">
-                <img src="./images/facebook.svg" alt="" class="footer__icon">
+            <div class="footer__content">
+                <p class="footer__copy">&copy; 2020  Supersite</p>
+                <ul class="footer__nav">
+                    <a href="/" class="footer__item">Главная</a>
+                    <a href="/about.html" class="footer__item">О проекте</a>
+                    <a href="https://praktikum.yandex.ru" target="_blank" class="footer__item">Яндекс.Практикум</a>
+                </ul>
+                <div class="footer__icons">
+                    <a class="footer__icon-link" href="https://github.com/350str" target="_blank">
+                        <img src="./images/github.svg" alt="" class="footer__icon">
+                    </a>
+                    <a class="footer__icon-link" href="https://www.facebook.com/" target="_blank">
+                        <img src="./images/facebook.svg" alt="" class="footer__icon">
+                    </a>         
+                </div>
             </div>
         </footer>
 
