@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./images/Group.jpg">
+    <link rel="stylesheet" href="analytics.115c3169e825f249debe.css">
+    <title>New Analyzer</title>
+</head>
+<body>
+    <div class="page">
+        <header class="header">
+            <a href="/analytics.html" class="header__main">NewsAnalyzer</a>
+                <div class="header__items">
+                    <div class="header__item-container">
+                        <a href="/index.html" class="header__item">Главная</a>
+                        <div class="header__dash header__dash_active"></div>
+                    </div>
+                    <div class="header__item-container">
+                        <a href="/about.html" class="header__item">О проекте</a>
+                        <div class="header__dash"></div>
+                    </div>
+                </div>
+        </header>
+
+        <section class="request">
+            <div class="request__content">
+                <p class="request__path">Главная <span class="request__path_color_grey">/ Аналитика</span></p>
+                <h1 class="title request__title">Вы спросили:«Путешествия»</h1>
+                <p class="request__subtitle">Новостей за неделю: <span class="request__subtitle_text_bold">34 324</span></p>
+                <p class="request__subtitle">Упоминаний в загаловках: <span class="request__subtitle_text_bold">235</span></p>
+            </div>
+        </section>
+
+        <section class="analysis">
+            <div class="analysis__content">
+                <h2 class="analysis__title">Аналитика по дням</h2>
+                <div class="analysis__axis">
+                    <div class="analysis__axis-text">
+                        <p class="analysis__axis-date">Дата<br>(<span class="analysis__month-name">Август</span>)</p>
+                        <p class="analysis__axis-count">Кол-во упоминаний</p>
+                    </div>
+                    <div class="analysis__points">
+                        <p class="analysis__point">0</p>
+                        <p class="analysis__point">25</p>
+                        <p class="analysis__point">50</p>
+                        <p class="analysis__point">75</p>
+                        <p class="analysis__point">100</p>
+                    </div>
+                </div>
+                <div class="analysis__items">
+                    <div class="analysis__item">
+                        <p class="analysis__date">
+                            <span class="analysis__date_day_month">19</span>, 
+                            <span class="analysis__date_day_week">пн</span>
+                        </p>
+                        <div class="analysis__graph">15</div>
+                    </div>
+                    <div class="analysis__item">
+                        <p class="analysis__date">
+                            <span class="analysis__date_day_month">20</span>, 
+                            <span class="analysis__date_day_week">вт</span>
+                        </p>
+                        <div class="analysis__graph">15</div>
+                    </div>
+                    <div class="analysis__item">
+                        <p class="analysis__date">
+                            <span class="analysis__date_day_month">21</span>, 
+                            <span class="analysis__date_day_week">ср</span>
+                        </p>
+                        <div class="analysis__graph">15</div>
+                    </div>
+                    <div class="analysis__item">
+                        <p class="analysis__date">
+                            <span class="analysis__date_day_month">22</span>, 
+                            <span class="analysis__date_day_week">чт</span>
+                        </p>
+                        <div class="analysis__graph">15</div>
+                    </div>
+                </div> 
+            </div>
+        </section>
+
+        <footer class="footer">
+            <p class="footer__copy">&copy; 2020  Supersite</p>
+            <ul class="footer__nav">
+                <li class="footer__item">Главная</li>
+                <li class="footer__item">О проекте</li>
+                <li class="footer__item">Яндекс.Практикум</li>
+            </ul>
+            <div class="footer__icons">
+                <img src="./images/github.svg" alt="" class="footer__icon">
+                <img src="./images/facebook.svg" alt="" class="footer__icon">
+            </div>
+        </footer>
+        
+    </div>
+    <script src="analytics.bc36654f0d938e676449.js"></script>
+</body>
+</html>
