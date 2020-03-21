@@ -1,17 +1,18 @@
 import './about.css';
 import Glide from '@glidejs/glide';
 
-console.log('fdsfdsfsdf');
-
-var glide = new Glide('#intro', {
+const glide = new Glide('#intro', {
   type: 'carousel',
   perView: 4,
   focusAt: 'center',
   breakpoints: {
-    800: {
+    1200: {
+      perView: 3
+    },
+    1100: {
       perView: 2
     },
-    480: {
+    660: {
       perView: 1
     }
   }

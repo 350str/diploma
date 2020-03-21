@@ -4,8 +4,17 @@
     background-color: #fff;
     margin-right: 16px;
     border-radius: 16px;
+    display: flex;
+    flex-direction: column;
 }
 
 .search-result__item:last-of-type {
     margin-right: 0;
 } 
+
+@media screen and (max-width: 730px) {
+    .search-result__item {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}

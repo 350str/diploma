@@ -8,6 +8,7 @@
 @import url(./__item-container/header__item-container.css);
 @import url(./__item/_font/_black/header__item_font_black.css);
 @import url(./__item/_font/_white/header__item_font_white.css);
+@import url(./__item/_first/header__item_first.css);
 
 .header {
     display: flex;

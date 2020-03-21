@@ -2,3 +2,15 @@
     max-width: 815px;
     margin: 24px 0 0 104px;
 }
+
+@media screen and (max-width: 1200px) {
+    .clients__subtitle {
+        margin: 16px 40px 0;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .clients__subtitle {
+        margin: 0;
+    }
+}

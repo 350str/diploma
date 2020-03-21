@@ -14,7 +14,13 @@
 
 .search-result {
     width: 100%;
-    padding: 8% 7%;
+    padding: 80px 104px;
     background-color: #F5F6F7;
     box-sizing: border-box;
+}
+
+@media screen and (max-width: 1200px) {
+    .search-result {
+        padding: 40px;
+    }
 }

@@ -15,3 +15,9 @@
     }
 }
 
+@media screen and (max-width: 665px) {
+    .about__subtitle {
+        margin-right: 0;
+    }
+}
+

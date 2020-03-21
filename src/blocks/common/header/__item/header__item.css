@@ -5,18 +5,8 @@
     margin: 30px 0 0;
 }
 
-.header__item:first-of-type {
-    margin-right: 34px;  
-}
-
 .header__item:hover {
     cursor: url('../../../../images/lapka.svg'), auto;
     opacity: 0.4;
     transition: linear 0.3s;
-}
-
-@media screen and (max-width: 570px) {
-    .header__item:first-of-type {
-        margin-right: 11px;
-    }
 }
