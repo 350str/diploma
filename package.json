@@ -44,7 +44,6 @@
   "dependencies": {
     "@glidejs/glide": "^3.4.1",
     "babel-polyfill": "^6.26.0",
-    "core-js": "^3.4.1",
-    "swiper": "^5.3.6"
+    "core-js": "^3.4.1"
   }
 }
