@@ -14,7 +14,7 @@ module.exports = {
   },
   output: {
     path: path.resolve(__dirname, 'public'),
-    filename: '[name].[chunkhash].js'
+    filename: '[name]/[name].[chunkhash].js'
   },
 // указали путь к файлу, в квадратных скобках куда вставлять сгенерированный хеш
   module: {
@@ -76,7 +76,7 @@ module.exports = {
   },
   plugins: [ 
     new MiniCssExtractPlugin({
-        filename: '[name].[contenthash].css'
+        filename: '[name]/[name].[contenthash].css'
     }),
     new OptimizeCssAssetsPlugin({
         assetNameRegExp: /\.css$/g,

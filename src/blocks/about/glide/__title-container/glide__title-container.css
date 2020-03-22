@@ -10,3 +10,9 @@
        padding: 0 40px;
     }
 }
+
+@media screen and (max-width: 660px) {
+    .glide__title-container {
+       padding: 0 5%;
+    }
+}
