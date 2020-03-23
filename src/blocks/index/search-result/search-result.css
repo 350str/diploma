@@ -24,3 +24,9 @@
         padding: 40px;
     }
 }
+
+@media screen and (max-width: 480px) {
+    .search-result {
+        padding: 16px;
+    }
+}

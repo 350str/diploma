@@ -2,19 +2,6 @@
     text-decoration: none;
     list-style-type: none;
     margin-right: 48px;
-    font-family: Source Sans Pro;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 24px;
-
-    color: #1A1B22;
-}
-
-.footer__item:hover {
-    cursor: url('../../../../images/lapka.svg'), auto;
-    opacity: 0.4;
-    transition: linear 0.3s;
 }
 
 .footer__item:last-of-type {

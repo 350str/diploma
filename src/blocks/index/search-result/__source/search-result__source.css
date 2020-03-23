@@ -7,5 +7,11 @@
     letter-spacing: 0.4px;
     text-transform: uppercase;
     color: #B6BCBF;
-    margin: 0;
+    margin: 18px 0 0;
+}
+
+@media screen and (max-width: 480px) {
+    .search-result__source {
+        margin-top: 10px;
+    }
 }
