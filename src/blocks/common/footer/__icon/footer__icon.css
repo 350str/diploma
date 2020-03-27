@@ -1,0 +1,14 @@
+.footer__icon {
+    width: 20px;
+    height: 20px;
+}
+
+/* .footer__icon:first-of-type {
+    margin-right: 28px;
+} */
+
+.footer__icon:hover {
+    cursor: url('../../../../images/lapka.svg'), auto;
+    opacity: 0.4;
+    transition: linear 0.3s;
+}
