@@ -1,23 +1,11 @@
-import Glide from '@glidejs/glide';
 import '@glidejs/glide/dist/css/glide.core.min.css';
 import '@glidejs/glide/dist/css/glide.theme.min.css';
 import './about.css';
+import { CommitCardList } from './js/components/CommitCardList';
 
-const glide = new Glide('#intro', {
-  type: 'carousel',
-  perView: 4,
-  focusAt: 'center',
-  breakpoints: {
-    1200: {
-      perView: 3
-    },
-    1100: {
-      perView: 2
-    },
-    660: {
-      perView: 1
+(function() {
+    window.onload = () => {
+        const commitCardList = new CommitCardList();
+        commitCardList.render();
     }
-  }
-})
-
-glide.mount()
+})();
