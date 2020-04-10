@@ -17,17 +17,17 @@ const searchInput = new SearchInput(newCardList);
 
 
 window.onload = () => {
-    const input = document.querySelector('.search__input');
+    const searchInput = document.querySelector('.search__input');
     const storageNewsArr = JSON.parse(localStorage.getItem('news'));
     const storageRequestObj = JSON.parse(localStorage.getItem('request'));
     const searchResultSection = document.querySelector('.search-result');
 
     if (storageNewsArr && storageNewsArr.length > 0) {
         searchResultSection.classList.add('search__result_show');
-        storageNewsArr.filter((item, index) => index < 3)
-                      .forEach(item => newsContainer.append(newsCard.createCard(item)))
+        storageNewsArr.filter((newsItem, newsIndex) => newsIndex < 3)
+                      .forEach(newsItem => newsContainer.append(newsCard.createCard(newsItem)))
     }
-    input.value = storageRequestObj && storageRequestObj.request ? storageRequestObj.request 
+    searchInput.value = storageRequestObj && storageRequestObj.request ? storageRequestObj.request 
                                                                  : ''
 }
 
