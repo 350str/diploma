@@ -7,7 +7,6 @@ export class NewsApi {
             .then(res => {
                 if (res.ok) return res.json()
                             return Promise.reject(`Could not fetch ${newsApiUrl(request)}, received ${res.status}`)            
-            })
-            .catch(err => console.error(err))     
+            })   
     }
 }

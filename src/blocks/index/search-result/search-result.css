@@ -31,3 +31,7 @@
         padding: 16px;
     }
 }
+
+.search__result_show {
+    display: block
+}

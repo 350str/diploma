@@ -8,6 +8,5 @@ export class GithubApi {
             if (res.ok) return res.json()
                         return Promise.reject(`Could not fetch ${githubApiUrl}, received ${res.status}`)
           })
-          .catch(err => console.error(err))
       }
 }

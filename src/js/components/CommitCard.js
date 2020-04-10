@@ -1,15 +1,16 @@
 export class CommitCard {
 
-    createCardBullet() {
+    createCardBullet = () => {
         const commitCards = document.querySelectorAll('.glide__slide');
         const bullet = document.createElement('button');
-        const bulletsContainer = document.querySelector('.glide__bullets');
 
         bullet.classList.add('glide__bullet');
-        if (commitCards.length === 1) bullet.classList.add('glide__bullet--active');
-
+        if (commitCards.length === 1) {
+            bullet.classList.add('glide__bullet--active')
+        };
         bullet.setAttribute('data-glide-dir', `=${commitCards.length - 1}`)
-        bulletsContainer.append(bullet);
+
+        return bullet
     }
 
     createCard = (
@@ -21,18 +22,22 @@ export class CommitCard {
         const commitCard = document.createElement('li');
         commitCard.classList.add('glide__slide');
         commitCard.insertAdjacentHTML('beforeEnd', `
-            <p class="glide__date">${date}</p>
+            <p class="glide__date"></p>
                 <div class="glide__user-info">
-                    <img src="${avatar_url}" alt="github commit user" class="glide__photo">
+                    <img src="" alt="github commit user" class="glide__photo">
                     <div class="glide__text-info">
-                        <p class="glide__user-name">${name}</p>
-                        <p class="glide__email">${email}</p>
+                        <p class="glide__user-name"></p>
+                        <p class="glide__email"></p>
                     </div>
                 </div>
-            <p class="glide__commit-text">${message}</p>
-        `);   
-        const cardContainer = document.querySelector('.glide__slides');
-        cardContainer.append(commitCard);
-        this.createCardBullet();
+            <p class="glide__commit-text"></p>
+        `);
+        commitCard.querySelector('.glide__date').textContent = date;
+        commitCard.querySelector('.glide__photo').setAttribute('src', avatar_url);
+        commitCard.querySelector('.glide__user-name').textContent = name;
+        commitCard.querySelector('.glide__email').textContent = email;
+        commitCard.querySelector('.glide__commit-text').textContent = message;
+
+        return commitCard
     }
 }

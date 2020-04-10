@@ -7,18 +7,24 @@ export class NewsCard {
         newsCard.setAttribute('target', '_blank')
         newsCard.classList.add('search-result__item');
         newsCard.insertAdjacentHTML('beforeEnd', `
-                <img src="${urlToImage}" alt="search result image" class="search-result__image">
+                <img src="" alt="search result image" class="search-result__image">
                 <div class="search-result__text">
                     <div class="search-result__main-text">
-                        <p class="search-result__date">${publishedAt}</p>
-                        <h3 class="search-result__title">${title}</h3>
-                        <p class="search-result__subtitle">${description}</p>
+                        <p class="search-result__date"></p>
+                        <h3 class="search-result__title"></h3>
+                        <p class="search-result__subtitle"></p>
                     </div>
-                    <p class="search-result__source">${name}</p>
+                    <p class="search-result__source"></p>
                 </div>          
-        `);   
-        const cardContainer = document.querySelector('.search-result__items');
-        cardContainer.append(newsCard);
+        `);
+        
+        newsCard.querySelector('.search-result__image').setAttribute('src', urlToImage);
+        newsCard.querySelector('.search-result__date').textContent = publishedAt;
+        newsCard.querySelector('.search-result__title').textContent = title;
+        newsCard.querySelector('.search-result__subtitle').textContent = description;
+        newsCard.querySelector('.search-result__source').textContent = name;
+
+        return newsCard;
         
     }
 }
