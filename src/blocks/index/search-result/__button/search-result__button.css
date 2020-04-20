@@ -15,6 +15,10 @@
     outline: none;
 }
 
+.search-result__button_hide {
+    display: none;
+}
+
 .search-result__button:hover {
     cursor: url('../../../../images/lapka.svg'), auto;
 }

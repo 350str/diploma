@@ -1,23 +1,21 @@
-import Glide from '@glidejs/glide';
 import '@glidejs/glide/dist/css/glide.core.min.css';
 import '@glidejs/glide/dist/css/glide.theme.min.css';
 import './about.css';
+import { CommitCardList } from './js/components/CommitCardList';
+import { GithubApi } from './js/modules/GithubApi';
+import { CommitCard } from './js/components/CommitCard';
 
-const glide = new Glide('#intro', {
-  type: 'carousel',
-  perView: 4,
-  focusAt: 'center',
-  breakpoints: {
-    1200: {
-      perView: 3
-    },
-    1100: {
-      perView: 2
-    },
-    660: {
-      perView: 1
+
+(function() {
+
+    const githubApi = new GithubApi();
+    const commitCard = new CommitCard();
+
+    window.onload = () => {
+        const cardsContainer = document.querySelector('.glide__slides');
+        const bulletsContainer = document.querySelector('.glide__bullets'); 
+
+        const commitCardList = new CommitCardList(cardsContainer, bulletsContainer, githubApi, commitCard);
+        commitCardList.render();
     }
-  }
-})
-
-glide.mount()
+})();

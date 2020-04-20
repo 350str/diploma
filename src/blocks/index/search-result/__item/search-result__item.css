@@ -1,20 +1,34 @@
 .search-result__item {
     width: 32%;
     background-color: #fff;
-    margin-right: 16px;
+    margin: 0 16px 16px 0;
     border-radius: 16px;
     display: flex;
     flex-direction: column;
+    /* min-height: 576px; */
+    padding-bottom: 24px;
+    text-decoration: none;
 }
 
 .search-result__item:last-of-type {
     margin-right: 0;
-} 
+}
+
+.search-result__item:hover {
+    cursor: url('../../../../images/lapka.svg'), auto;
+}
+
+@media screen and (max-width: 1280px) {
+    .search-result__item {
+        width: 45%;
+        margin-bottom: 10px;
+        padding-bottom: 16px;
+    }
+}
 
 @media screen and (max-width: 730px) {
     .search-result__item {
         width: 100%;
-        margin: 0 0 10px;
     }
 }
 

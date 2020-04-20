@@ -1,6 +1,7 @@
 .search-result__items {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 @media screen and (max-width: 730px) {

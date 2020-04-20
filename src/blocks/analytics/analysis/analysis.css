@@ -10,11 +10,13 @@
 @import url(./__point/analysis__point.css);
 @import url(./__points/analysis__points.css);
 @import url(./__title/analysis__title.css);
+@import url(./__content/analysis__content.css);
 
 .analysis {
     padding: 80px 104px;
     box-sizing: border-box;
     background: #F5F6F7;
+    min-height: 600px;
 }
 
 @media screen and (max-width: 1200px) {
@@ -27,4 +29,8 @@
     .analysis {
         padding: 16px;
     }
+}
+
+.analysis__points_bottom {
+    margin-bottom: 0;
 }
