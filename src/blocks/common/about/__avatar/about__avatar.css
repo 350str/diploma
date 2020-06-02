@@ -3,6 +3,7 @@
     height: 464px;
     align-self: center;
     margin-left: 7%;
+    border-radius: 50%;
 }
 
 @media screen and (max-width: 1024px) {
