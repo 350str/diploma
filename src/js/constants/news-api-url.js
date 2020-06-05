@@ -1,4 +1,4 @@
-const MAIN_URL = 'https://newsapi.org/v2/everything?';
+const MAIN_URL = 'https://praktikum.tk/news/v2/everything?';
 const API_KEY = 'd8002f370a8a4f15b41532a60d2e58e2';
 const TIME_FROM = 1000*60*60*24*7;
 const DATE_TO = new Date().toISOString();
