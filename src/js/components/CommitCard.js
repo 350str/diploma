@@ -36,7 +36,8 @@ export class CommitCard {
         commitCard.querySelector('.glide__photo').setAttribute('src', avatar_url);
         commitCard.querySelector('.glide__user-name').textContent = name;
         commitCard.querySelector('.glide__email').textContent = email;
-        commitCard.querySelector('.glide__commit-text').textContent = message;
+        commitCard.querySelector('.glide__commit-text').textContent = 
+            message.length > 100 ? message.slice(0, 100) + '...' : message;
 
         return commitCard
     }
