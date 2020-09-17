@@ -16,7 +16,7 @@ export class CommitCard {
     createCard = (
         { 
             commit: { committer: { name, email, date }, message }, 
-            author: { avatar_url } 
+            author
         }) => {
 
         const commitCard = document.createElement('li');
@@ -33,7 +33,7 @@ export class CommitCard {
             <p class="glide__commit-text"></p>
         `);
         commitCard.querySelector('.glide__date').textContent = date;
-        commitCard.querySelector('.glide__photo').setAttribute('src', avatar_url);
+        commitCard.querySelector('.glide__photo').setAttribute('src', author?.avatar_url || 'https://static.thenounproject.com/png/1864296-200.png');
         commitCard.querySelector('.glide__user-name').textContent = name;
         commitCard.querySelector('.glide__email').textContent = email;
         commitCard.querySelector('.glide__commit-text').textContent = 
